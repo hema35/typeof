@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Feature Detection
+    </title>
+    <script>
+      window.onload = function() {
+        if (typeof Symbol == 'function') {
+          out = 'your browser supports Symbol';
+        } else {
+          out =
+            'your browser has no Symbol support (returned ' +
+            typeof Symbol +
+            ')';
+        }
+        document.getElementById('div1').innerHTML = out;
+      };
+    </script>
+  </head>
+  <body>
+    <div id="div1"></div>
+  </body>
+</html>
